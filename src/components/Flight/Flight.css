@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(108, 209, 243);
+    background-size: 200% 100%;
+    background-position: center;
+  background-repeat: no-repeat;
+}
+.score{
+  z-index: 5;
+}

@@ -1,0 +1,8 @@
+.barrior{
+    position: absolute;
+    transition: transform 0.5s ease;
+}
+.barrior-top{
+    position: absolute;
+    transition: transform 0.5s ease;
+}
