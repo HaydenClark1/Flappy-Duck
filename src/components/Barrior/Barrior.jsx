@@ -1,7 +1,7 @@
 import BarriorPic from '../images/barrior.png'
 import { useState, useEffect } from 'react';
 import '../Barrior/Barrior.css';
-function Barrior({onUpdateBarriors, speed}){
+function Barrior({onUpdateBarriors}){
   const windowHeight = window.innerHeight ;
   const [barriors, setBarriorArray] = useState([]);
   //FOR BOTTOM BARRIORS
@@ -77,7 +77,7 @@ const [barriorsTop, setBarriorArrayTop] = useState([]);
           return () => {
             clearInterval(intervalID);
           };
-        }, [speed])
+        }, [])
 
         useEffect(() => {
           onUpdateBarriors(barriors, barriorsTop);

@@ -1,4 +1,4 @@
-import { useEffect, useInsertionEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Player from "../player/player";
 import Barrior from "../Barrior/Barrior";
 import '../Flight/Flight.css';
@@ -71,7 +71,6 @@ function Flight() {
           />}
         {playerStatus === 'alive' && <Barrior 
         onUpdateBarriors={handleBarriors}
-        speed={speed}
         />} 
         {playerStatus === 'dead' && <GameOver score={score} highscore={highscore} onRestart={handleRestart}/>}
       </div>

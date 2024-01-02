@@ -33,15 +33,7 @@ function Player({ onAnimationChange, handleCollision, barriorsTop, barriorsBotto
 
   const detectKeyDown = (event) => {
     if (event.key === 'Enter') {
-     /* if (isAnimating) { //if to go down
-        // If already animating, stop the animation
-        clearInterval(animationIntervalRef.current);
-        animationIntervalRef.current = null;
-        setIsAnimating(false);
-        return;
-      }else{ */
       startAnimation();
-      //}
     }
   };
 
