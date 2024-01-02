@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import Player from "../player/player";
 import Barrior from "../Barrior/Barrior";
 import '../Flight/Flight.css';
 import GameOver from "../GameOver/GameOver";
+import Player from "../Player/Player";
 
 function Flight() {
   const [playerStatus, setStatus] = useState('alive');
