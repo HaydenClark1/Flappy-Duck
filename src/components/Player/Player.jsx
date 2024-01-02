@@ -12,7 +12,6 @@ function Player({ onAnimationChange, handleCollision, barriorsTop, barriorsBotto
   const [position, setPosition] = useState(20);
   const [isAnimating, setIsAnimating] = useState(false);
   const animationIntervalRef = useRef(null);
-  const [score, setScore] = useState(0);
 
   const startAnimation = () => {
     setIsAnimating(true);
